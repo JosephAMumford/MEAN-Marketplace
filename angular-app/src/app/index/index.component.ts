@@ -50,9 +50,9 @@ export class IndexComponent implements OnInit {
     })
   }
 
-  logout_user(){
-    this.authorizationService.logout().subscribe( ()=> {
-      this.router.navigateByUrl('');
-    })
-  }
+  // logout_user(){
+  //   this.authorizationService.logout().subscribe( ()=> {
+  //     this.router.navigateByUrl('');
+  //   })
+  // }
 }

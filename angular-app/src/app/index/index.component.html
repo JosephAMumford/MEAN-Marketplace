@@ -1,7 +1,6 @@
-<div>
-  <button (click)="logout_user()">Logout</button>
-</div>
-<div>
+<app-login></app-login>
+<app-register></app-register>
+<!-- <div>
     <div *ngIf='registrationErrors.length'>
       <ul class="alert alert-danger">
         <li *ngFor='let error of registrationErrors'>{{error}}</li>
@@ -20,8 +19,8 @@
       </div>
       <button *ngIf='loginData.valid'>Login</button>
     </form>
-</div>
-<div>
+</div> -->
+<!-- <div>
   <form #formData='ngForm'>
     <h3>Register</h3>
     <div>
@@ -59,7 +58,7 @@
       <input *ngIf='!formData.valid' class="form-incomplete form-submit" type="button" value="Register">
     </div>
   </form>
-</div>
+</div> -->
 <div>
   <h1>List</h1>
   <div>

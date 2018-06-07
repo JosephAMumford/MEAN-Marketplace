@@ -1,3 +1,20 @@
-<p>
-  login works!
-</p>
+<div>
+    <div *ngIf='registrationErrors.length'>
+      <ul class="alert alert-danger">
+        <li *ngFor='let error of registrationErrors'>{{error}}</li>
+      </ul>
+    </div>
+  <h1>Login</h1>
+  <div>
+    <form (submit)='login_user(loginData.value)' #loginData='ngForm'>
+      <div>
+        <label>Email</label>
+        <input type="text" name="lemail" #lemail='ngModel' [(ngModel)]='user.email'>
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="text" name="lpassword" #lpassword='ngModel' [(ngModel)]='user.password'>
+      </div>
+      <button *ngIf='loginData.valid'>Login</button>
+    </form>
+</div>
